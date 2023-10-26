@@ -1,0 +1,107 @@
+javaScript B
+
+        let a = [1, 2, 3, 9, 8, 7, 5, 6, 2];
+        for(let i=0; i<a.length; i++) {
+            for(let j=i+1; j<a.length; j++) {
+                if(a[i]<a[j]) {
+                    let temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
+                }
+            }
+        }
+        for(let i=0; i<a.length; i++)
+            console.log(a[i]);
+
+-----------------------------------------------------------------------------------------------------------------------
+javaScript A
+
+
+        let str = "This is a sunny day";
+        let a = str.split(" ");
+        for(let i=0; i<a.length; i++) {
+            let b = a[i];
+            for(let j=b.length-1; j>=0; j--) {
+                process.stdout.write(b.charAt(j));
+            }
+            process.stdout.write(" ");}
+----------------------------------------------------------------------------------------------------------------------------
+java B
+
+import java.util.HashMap;
+public class ShubhFirst {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		HashMap<String, Integer> lookup = new HashMap<>();
+       
+        lookup.put("M", 1000);
+        lookup.put("CM", 900);
+        lookup.put("D", 500);
+        lookup.put("CD", 400);
+        lookup.put("C", 100);
+        lookup.put("XC", 90);
+        lookup.put("L", 50);
+        lookup.put("XL", 40);
+        lookup.put("X", 10);
+        lookup.put("IX", 9);
+        lookup.put("VIII", 8);
+        lookup.put("VII", 7);
+        lookup.put("VI", 6);
+        lookup.put("V", 5);
+        lookup.put("IV", 4);
+        lookup.put("III", 3);
+        lookup.put("II", 2);
+        lookup.put("I", 1);
+
+System.out.println(lookup.get("IX"));
+------------------------------------------------------------------------------------------------------------------------------------
+java A
+public class suffle {
+    public static void main(String[] args) {
+        int a[]={1,2,3,4,5,6,7};
+        int t=a[0];
+		for(int i=0;i<a.length-1;i++)
+		{
+			a[i]=a[i+1];
+		}
+		a[a.length-1]=t;
+		for(int i=0;i<a.length;i++)
+		{
+			System.out.print(a[i]+" ");
+		}
+    }
+}
+-----------------------------------------------------------------------------------
+java C
+public class Program {
+    public static void main(String[] args) {
+        
+        String s1="aaaashdjfgkhefuhsdkfhsdldf";
+        int cnt=0;
+       for(int i=0;i<s1.length();i++)
+		{
+			char ch=s1.charAt(i);
+			if(ch>='a'&&ch<'z'||ch>='A'&&ch<'Z')
+			cnt++;
+		    
+		}
+        
+    if(cnt==s1.length())
+			System.out.print(true);
+        else
+        System.out.println(false);
+    }
+		
+    
+}
+
+
+
+		
+		
+	}
+
+}
+
